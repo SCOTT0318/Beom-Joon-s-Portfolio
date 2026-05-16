@@ -128,32 +128,35 @@ class User(UserMixin, db.Model):
                 </div>
 
                 <div class="media-panel">
-                    <h3>미디어</h3>
                     <div class="image-gallery">
-                        <figure class="media-card media-card-large">
-                            <img src="data/board_main.png" alt="Flask 게시판 메인 페이지" class="gallery-item" loading="lazy">
+                        <figure class="media-card">
+                            <img src="data/board/board_main.png" alt="Flask 게시판 메인 페이지" class="gallery-item" loading="lazy">
                             <figcaption>게시판 메인</figcaption>
                         </figure>
                         <figure class="media-card">
-                            <img src="data/login_page.png" alt="게시판 로그인 페이지" class="gallery-item" loading="lazy">
+                            <img src="data/board/login_page.png" alt="게시판 로그인 페이지" class="gallery-item" loading="lazy">
                             <figcaption>로그인</figcaption>
                         </figure>
                         <figure class="media-card">
-                            <img src="data/register_page.png" alt="게시판 회원가입 페이지" class="gallery-item" loading="lazy">
+                            <img src="data/board/register_page.png" alt="게시판 회원가입 페이지" class="gallery-item" loading="lazy">
                             <figcaption>회원가입</figcaption>
                         </figure>
                         <figure class="media-card">
-                            <img src="data/write_post.png" alt="게시글 작성 페이지" class="gallery-item" loading="lazy">
+                            <img src="data/board/write_post.png" alt="게시글 작성 페이지" class="gallery-item" loading="lazy">
                             <figcaption>게시글 작성</figcaption>
                         </figure>
-                        <figure class="media-card">
-                            <video class="gallery-item" muted playsinline preload="metadata" aria-label="게시글 영상 업로드 시연">
-                                <source src="data/post_video.mov" type="video/quicktime">
-                                동영상이 지원되지 않습니다.
-                            </video>
-                            <figcaption>영상 업로드 시연</figcaption>
-                        </figure>
                     </div>
+                </div>
+
+                <div class="video-panel">
+                    <span class="panel-label">Live Demo</span>
+                    <figure class="video-card">
+                        <video class="autoplay-video" autoplay loop muted playsinline preload="auto" poster="data/board/post_video_poster.jpg" aria-label="게시글 영상 업로드 시연">
+                            <source src="data/board/post_video.mp4" type="video/mp4">
+                            동영상이 지원되지 않습니다.
+                        </video>
+                        <figcaption>영상 업로드 시연</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -207,14 +210,13 @@ class User(UserMixin, db.Model):
                 </div>
 
                 <div class="media-panel">
-                    <h3>미디어</h3>
-                    <div class="image-gallery image-gallery-compact">
+                    <div class="image-gallery">
                         <figure class="media-card">
-                            <img src="data/add_stock.png" alt="주식 종목 추가 페이지" class="gallery-item" loading="lazy">
+                            <img src="data/stock/add_stock.png" alt="주식 종목 추가 페이지" class="gallery-item" loading="lazy">
                             <figcaption>종목 추가</figcaption>
                         </figure>
                         <figure class="media-card">
-                            <img src="data/visualize_stock.png" alt="주식 데이터 시각화 페이지" class="gallery-item" loading="lazy">
+                            <img src="data/stock/visualize_stock.png" alt="주식 데이터 시각화 페이지" class="gallery-item" loading="lazy">
                             <figcaption>데이터 시각화</figcaption>
                         </figure>
                     </div>
@@ -269,32 +271,35 @@ box_detected = any(
                 </div>
 
                 <div class="media-panel">
-                    <h3>미디어</h3>
                     <div class="image-gallery">
                         <figure class="media-card">
-                            <img src="data/login_hidden.png" alt="포트홀 시스템 로그인 비밀번호 숨김 화면" class="gallery-item" loading="lazy">
+                            <img src="data/pothole/login_hidden.png" alt="포트홀 시스템 로그인 비밀번호 숨김 화면" class="gallery-item" loading="lazy">
                             <figcaption>로그인</figcaption>
                         </figure>
                         <figure class="media-card">
-                            <img src="data/register_pothole.png" alt="포트홀 시스템 회원가입 화면" class="gallery-item" loading="lazy">
+                            <img src="data/pothole/register_pothole.png" alt="포트홀 시스템 회원가입 화면" class="gallery-item" loading="lazy">
                             <figcaption>회원가입</figcaption>
                         </figure>
                         <figure class="media-card">
-                            <img src="data/login_visible.png" alt="포트홀 시스템 로그인 비밀번호 표시 화면" class="gallery-item" loading="lazy">
+                            <img src="data/pothole/login_visible.png" alt="포트홀 시스템 로그인 비밀번호 표시 화면" class="gallery-item" loading="lazy">
                             <figcaption>비밀번호 표시</figcaption>
                         </figure>
-                        <figure class="media-card media-card-large">
-                            <img src="data/pothole_dashboard.png" alt="포트홀 감지 결과 대시보드" class="gallery-item" loading="lazy">
+                        <figure class="media-card">
+                            <img src="data/pothole/pothole_dashboard.png" alt="포트홀 감지 결과 대시보드" class="gallery-item" loading="lazy">
                             <figcaption>감지 결과 대시보드</figcaption>
                         </figure>
-                        <figure class="media-card">
-                            <video class="gallery-item" muted playsinline preload="metadata" aria-label="YOLO 포트홀 객체 감지 시연">
-                                <source src="data/model_detection.mov" type="video/quicktime">
-                                동영상이 지원되지 않습니다.
-                            </video>
-                            <figcaption>객체 감지 시연</figcaption>
-                        </figure>
                     </div>
+                </div>
+
+                <div class="video-panel">
+                    <span class="panel-label">Live Demo</span>
+                    <figure class="video-card">
+                        <video class="autoplay-video" autoplay loop muted playsinline preload="auto" poster="data/pothole/model_detection_poster.jpg" aria-label="YOLO 포트홀 객체 감지 시연">
+                            <source src="data/pothole/model_detection.mp4" type="video/mp4">
+                            동영상이 지원되지 않습니다.
+                        </video>
+                        <figcaption>객체 감지 시연</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -307,9 +312,6 @@ box_detected = any(
                 <button class="close" type="button" aria-label="미디어 모달 닫기">닫기</button>
             </div>
             <img id="modalImage" src="" alt="" hidden>
-            <video id="modalVideo" controls hidden>
-                동영상이 지원되지 않습니다.
-            </video>
         </div>
     </div>
 
